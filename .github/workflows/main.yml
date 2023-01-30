@@ -1,10 +1,7 @@
-name: Playwright Tests
+name: Feedback QR VCB
 on:
   schedule:
     - cron: '00 02,08 * * 1,2,3,4,5,6'
-  push:
-    branches:
-      - main
 jobs:
   test:
     timeout-minutes: 120
