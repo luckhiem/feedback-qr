@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 import { faker } from '@faker-js/faker'
 
 
-for (let index = 0; index < 5; index++) {
+for (let index = 0; index < 2; index++) {
     test(`Danh gia Nhat Huyen ${index}`, async ({ page }) => {
         const phoneNumber = faker.phone.number('090#######');
         await page.goto("https://docs.google.com/forms/d/e/1FAIpQLScb4p61_2SvwjBNCvKDN-67IL1Tku1Lq3BJ6GhLs6kko7LQSA/viewform?&entry.1582431947=40848");
